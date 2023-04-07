@@ -40,7 +40,6 @@ public class EntityConverter {
             .collect(Collectors.toList());
     }
 
-
     public static List<ArticleUserResponse> convertArticlesPerUser(List<Article> articles) {
         List<ArticleUserResponse> articleUserResponses = new ArrayList<>();
         Map<User, List<Article>> map = articles.stream()

@@ -8,6 +8,7 @@ import com.divnych.contentmanagement.repository.UserRepository;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -33,8 +34,13 @@ public class UserService {
             .collect(Collectors.toList());
     }
 
-
     public Set<String> getUserNamesByArticlesNumOver3() {
         return userRepository.getUserNamesByArticlesNumOver3();
     }
+
+    public User getUserById(Long id) {
+        return userRepository.findById(id)
+            .orElseThrow(() -> new EntityNotFoundException("User with id:" + id + " not found)"));
+    }
+
 }

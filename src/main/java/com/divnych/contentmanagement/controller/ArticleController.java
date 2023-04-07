@@ -1,12 +1,10 @@
 package com.divnych.contentmanagement.controller;
 
+import com.divnych.contentmanagement.model.ArticleRequest;
 import com.divnych.contentmanagement.model.ArticleUserResponse;
 import com.divnych.contentmanagement.service.ArticleService;
 import java.util.List;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/articles")
@@ -18,8 +16,14 @@ public class ArticleController {
         this.articleService = articleService;
     }
 
+    @PostMapping("/save")
+    public void saveArticle(@RequestBody ArticleRequest articleRequest) {
+        articleService.saveArticle(articleRequest);
+    }
+
     @GetMapping("/color/{color}")
     public List<ArticleUserResponse> getArticlesPerUser(@PathVariable String color) {
         return articleService.getArticlesPerUser(color);
     }
+
 }
