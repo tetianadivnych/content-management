@@ -1,6 +1,6 @@
 package com.divnych.contentmanagement.controller;
 
-import com.divnych.contentmanagement.model.UserAndArticleResponse;
+import com.divnych.contentmanagement.model.UserAndArticlesResponse;
 import com.divnych.contentmanagement.model.UserRequest;
 import com.divnych.contentmanagement.model.UserResponse;
 import com.divnych.contentmanagement.service.UserService;
@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @GetMapping("/articles")
-    public List<UserAndArticleResponse> getUsersWithArticles() {
+    public List<UserAndArticlesResponse> getUsersWithArticles() {
         return userService.getUsersAndArticles();
     }
 }

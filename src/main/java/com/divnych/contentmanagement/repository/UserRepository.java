@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(nativeQuery = true, value = "select * from users u inner join articles a on u.id=a.user_id")
-    List<User> getUsersWithArticles();
+    List<User> getUsersAndArticles();
 
 }
