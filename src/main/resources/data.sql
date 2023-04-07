@@ -14,11 +14,19 @@ VALUES ('good morning world', 1, 'WHITE');
 INSERT INTO articles (text, user_id, color)
 VALUES ('hawaii', 2, 'PINK');
 INSERT INTO articles (text, user_id, color)
+VALUES ('germany', 2, 'PINK');
+INSERT INTO articles (text, user_id, color)
 VALUES ('remark', 2, 'BLACK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('cartoon', 2, 'WHITE');
 INSERT INTO articles (text, user_id, color)
 VALUES ('scoobie-doo', 3, 'PINK');
 INSERT INTO articles (text, user_id, color)
-VALUES ('lalaland', 3, 'PINK')
+VALUES ('lalaland', 3, 'PINK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('ferrero', 3, 'PINK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('tiramisu', 3, 'PINK');
 
 
 

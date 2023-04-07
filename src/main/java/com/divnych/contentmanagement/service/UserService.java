@@ -6,6 +6,7 @@ import com.divnych.contentmanagement.model.UserRequest;
 import com.divnych.contentmanagement.model.UserResponse;
 import com.divnych.contentmanagement.repository.UserRepository;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,7 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public List<UserResponse> getUsersOverAge(int age) {
+    public List<UserResponse> getUsersByAgeOver(int age) {
         return userRepository.findAll().stream()
             .filter(user -> user.getAge() > age)
             .map(EntityConverter::convertUser)
@@ -33,4 +34,7 @@ public class UserService {
     }
 
 
+    public Set<String> getUserNamesByArticlesNumOver3() {
+        return userRepository.getUserNamesByArticlesNumOver3();
+    }
 }
