@@ -7,9 +7,18 @@ VALUES ('liam', 24);
 INSERT INTO users (name, age)
 VALUES ('gloria', 27);
 
-INSERT INTO articles (text, user_id)
-VALUES ('hello world', 1);
-INSERT INTO articles (text, user_id)
-VALUES ('good morning world', 1);
-INSERT INTO articles (text, user_id)
-VALUES ('hawaii', 2);
+INSERT INTO articles (text, user_id, color)
+VALUES ('hello world', 1, 'WHITE');
+INSERT INTO articles (text, user_id, color)
+VALUES ('good morning world', 1, 'WHITE');
+INSERT INTO articles (text, user_id, color)
+VALUES ('hawaii', 2, 'PINK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('remark', 2, 'BLACK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('scoobie-doo', 3, 'PINK');
+INSERT INTO articles (text, user_id, color)
+VALUES ('lalaland', 3, 'PINK')
+
+
+
