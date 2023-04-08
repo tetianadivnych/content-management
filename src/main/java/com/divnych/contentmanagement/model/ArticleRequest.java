@@ -9,8 +9,11 @@ import lombok.Setter;
 public class ArticleRequest {
 
     private Long id;
+
     private String text;
+
     private Color color;
+
     private Long userId;
 
 

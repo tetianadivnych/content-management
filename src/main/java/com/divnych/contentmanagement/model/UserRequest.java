@@ -8,7 +8,9 @@ import lombok.Setter;
 public class UserRequest {
 
     private Long id;
+
     private String name;
+
     private Integer age;
 
 }

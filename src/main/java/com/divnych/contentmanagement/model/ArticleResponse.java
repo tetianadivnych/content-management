@@ -9,7 +9,9 @@ import lombok.Setter;
 public class ArticleResponse {
 
     private Long id;
+
     private String text;
+
     private Color color;
 
 }

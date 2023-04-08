@@ -4,7 +4,6 @@ import com.divnych.contentmanagement.converter.EntityConverter;
 import com.divnych.contentmanagement.entity.Article;
 import com.divnych.contentmanagement.entity.User;
 import com.divnych.contentmanagement.model.ArticleRequest;
-import com.divnych.contentmanagement.model.ArticleResponse;
 import com.divnych.contentmanagement.model.ArticleUserResponse;
 import com.divnych.contentmanagement.repository.ArticleRepository;
 import java.util.List;
@@ -18,7 +17,6 @@ public class ArticleService {
 
     public ArticleService(ArticleRepository articleRepository, UserService userService) {
         this.articleRepository = articleRepository;
-
         this.userService = userService;
     }
 
@@ -27,9 +25,7 @@ public class ArticleService {
         return EntityConverter.convertArticlesPerUser(articles);
     }
 
-
     public void saveArticle(ArticleRequest request) {
-
         User user = userService.getUserById(request.getUserId());
         Article article = new Article();
         article.setUser(user);

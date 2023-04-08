@@ -9,7 +9,7 @@ import lombok.Setter;
 public class ArticleUserResponse {
 
     private UserResponse user;
-    private List<ArticleResponse> articles;
 
+    private List<ArticleResponse> articles;
 
 }

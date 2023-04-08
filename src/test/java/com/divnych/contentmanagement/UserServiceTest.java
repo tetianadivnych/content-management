@@ -53,5 +53,4 @@ class UserServiceTest {
         return users;
     }
 
-
 }
