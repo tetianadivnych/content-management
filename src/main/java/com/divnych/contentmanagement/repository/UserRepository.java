@@ -12,6 +12,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(nativeQuery = true, value = "SELECT u.name FROM users u INNER JOIN articles a ON u.id=a.user_id GROUP BY u.id, u.name HAVING COUNT(a.id)>3")
     Set<String> getUserNamesByArticlesNumOver3();
 
-
-
 }
