@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import com.divnych.contentmanagement.entity.User;
-import com.divnych.contentmanagement.model.UserResponse;
+import com.divnych.contentmanagement.payload.response.UserResponse;
 import com.divnych.contentmanagement.repository.UserRepository;
 import com.divnych.contentmanagement.service.UserService;
 import java.util.ArrayList;

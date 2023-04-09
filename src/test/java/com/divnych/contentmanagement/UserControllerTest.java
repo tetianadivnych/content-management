@@ -8,7 +8,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.divnych.contentmanagement.controller.UserController;
-import com.divnych.contentmanagement.model.UserResponse;
+import com.divnych.contentmanagement.payload.response.UserResponse;
 import com.divnych.contentmanagement.service.UserService;
 import java.util.ArrayList;
 import java.util.List;

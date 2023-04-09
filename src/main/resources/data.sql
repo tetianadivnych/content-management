@@ -1,3 +1,6 @@
+INSERT INTO roles (name)
+VALUES ('ROLE_USER');
+
 INSERT INTO users (name, age)
 VALUES ('tom', 33);
 INSERT INTO users (name, age)

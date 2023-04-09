@@ -1,7 +1,7 @@
 package com.divnych.contentmanagement.controller;
 
-import com.divnych.contentmanagement.model.UserRequest;
-import com.divnych.contentmanagement.model.UserResponse;
+import com.divnych.contentmanagement.payload.request.UserRequest;
+import com.divnych.contentmanagement.payload.response.UserResponse;
 import com.divnych.contentmanagement.service.UserService;
 import java.util.List;
 import java.util.Set;

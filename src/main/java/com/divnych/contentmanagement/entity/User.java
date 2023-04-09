@@ -42,4 +42,9 @@ public class User {
     public User(String name) {
         this.name = name;
     }
+
+    public User(String username, String password) {
+        this.name = username;
+        this.password = password;
+    }
 }

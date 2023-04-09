@@ -1,4 +1,4 @@
-package com.divnych.contentmanagement.model;
+package com.divnych.contentmanagement.payload.response;
 
 import java.util.List;
 import lombok.Getter;

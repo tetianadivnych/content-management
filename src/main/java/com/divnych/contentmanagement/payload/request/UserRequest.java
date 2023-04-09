@@ -1,4 +1,4 @@
-package com.divnych.contentmanagement.model;
+package com.divnych.contentmanagement.payload.request;
 
 import lombok.Getter;
 import lombok.Setter;

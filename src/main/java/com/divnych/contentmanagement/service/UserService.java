@@ -2,8 +2,8 @@ package com.divnych.contentmanagement.service;
 
 import com.divnych.contentmanagement.converter.EntityConverter;
 import com.divnych.contentmanagement.entity.User;
-import com.divnych.contentmanagement.model.UserRequest;
-import com.divnych.contentmanagement.model.UserResponse;
+import com.divnych.contentmanagement.payload.request.UserRequest;
+import com.divnych.contentmanagement.payload.response.UserResponse;
 import com.divnych.contentmanagement.repository.UserRepository;
 import java.util.List;
 import java.util.Set;

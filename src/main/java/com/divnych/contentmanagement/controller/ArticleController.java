@@ -1,7 +1,7 @@
 package com.divnych.contentmanagement.controller;
 
-import com.divnych.contentmanagement.model.ArticleRequest;
-import com.divnych.contentmanagement.model.ArticleUserResponse;
+import com.divnych.contentmanagement.payload.request.ArticleRequest;
+import com.divnych.contentmanagement.payload.response.ArticleUserResponse;
 import com.divnych.contentmanagement.service.ArticleService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;

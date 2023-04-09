@@ -1,4 +1,4 @@
-package com.divnych.contentmanagement.model;
+package com.divnych.contentmanagement.payload.response;
 
 import com.divnych.contentmanagement.entity.EColor;
 import lombok.Getter;

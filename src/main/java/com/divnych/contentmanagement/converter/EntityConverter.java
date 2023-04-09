@@ -2,9 +2,9 @@ package com.divnych.contentmanagement.converter;
 
 import com.divnych.contentmanagement.entity.Article;
 import com.divnych.contentmanagement.entity.User;
-import com.divnych.contentmanagement.model.ArticleResponse;
-import com.divnych.contentmanagement.model.ArticleUserResponse;
-import com.divnych.contentmanagement.model.UserResponse;
+import com.divnych.contentmanagement.payload.response.ArticleResponse;
+import com.divnych.contentmanagement.payload.response.ArticleUserResponse;
+import com.divnych.contentmanagement.payload.response.UserResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
