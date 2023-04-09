@@ -1,12 +1,13 @@
 # Content Management Application
 
-This Spring Boot application provides functionality for managing articles and users. Each controller provides functionality for managing a specific resource: ArticleController for managing articles, and UserController for managing users.
+This Spring Boot application provides functionality for managing articles and users. Each controller provides functionality for managing a specific resource: ArticleController for managing articles, and UserController for managing users. All endpoints are accessed only with JWT tokens, except for `/auth/**`.
 
 ## Technologies Used
 - Java 8
 - Spring Boot
 - Spring Web
 - Spring Data
+- Spring Security
 - Apache Maven
 - Maven Wrapper
 - H2 database
