@@ -1,9 +1,7 @@
 package com.divnych.contentmanagement.entity;
 
-public enum Color {
-
+public enum EColor {
     BLACK,
     WHITE,
     PINK
-
 }

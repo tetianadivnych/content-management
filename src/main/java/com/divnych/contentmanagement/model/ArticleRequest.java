@@ -1,6 +1,6 @@
 package com.divnych.contentmanagement.model;
 
-import com.divnych.contentmanagement.entity.Color;
+import com.divnych.contentmanagement.entity.EColor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,7 +12,7 @@ public class ArticleRequest {
 
     private String text;
 
-    private Color color;
+    private EColor color;
 
     private Long userId;
 

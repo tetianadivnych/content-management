@@ -7,19 +7,23 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name = "articles")
-public class Article {
+@Table(name = "roles")
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String text;
-
     @Enumerated(EnumType.STRING)
-    private EColor color;
+    @Column(length = 20)
+    private ERole name;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    public Role() {
+    }
+
+    public Role(ERole name) {
+        this.name = name;
+    }
+
+
 }
