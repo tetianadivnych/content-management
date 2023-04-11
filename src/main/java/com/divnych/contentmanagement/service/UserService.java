@@ -29,6 +29,7 @@ public class UserService {
 
     public List<UserResponse> getUsersByAgeOver(int age) {
         return userRepository.findAll().stream()
+            .filter(user -> user.getAge() != null)
             .filter(user -> user.getAge() > age)
             .map(EntityConverter::convertUser)
             .collect(Collectors.toList());

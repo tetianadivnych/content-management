@@ -9,6 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.divnych.contentmanagement.controller.UserController;
 import com.divnych.contentmanagement.payload.response.UserResponse;
+import com.divnych.contentmanagement.security.jwt.AuthTokenFilter;
 import com.divnych.contentmanagement.service.UserService;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +18,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(UserController.class)
+@WebMvcTest(value = UserController.class, excludeFilters =
+@ComponentScan.Filter(
+    type = FilterType.ASSIGNABLE_TYPE,
+    classes = AuthTokenFilter.class))
 public class UserControllerTest {
 
     @Autowired
@@ -30,6 +37,7 @@ public class UserControllerTest {
     private UserService userService;
 
     @Test
+    @WithMockUser
     @DisplayName("Should return users with age over given value")
     void testGetUsersByAgeOver() throws Exception {
         List<UserResponse> userResponses = generateUserResponses();
